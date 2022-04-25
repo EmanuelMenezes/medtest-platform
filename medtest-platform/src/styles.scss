@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+  body{
+    background: #e8e8f3;
+    max-height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+    margin-top: 120px;
+    padding: 40px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  .form-input{
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 1px 1px 4px #00000010;
+    background-color: #ffffff50;
+  }

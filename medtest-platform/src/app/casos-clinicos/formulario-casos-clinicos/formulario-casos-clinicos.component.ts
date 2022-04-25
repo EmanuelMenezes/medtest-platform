@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario-casos-clinicos',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioCasosClinicosComponent implements OnInit {
 
-  constructor() { }
+  formCasosClinicos : FormGroup
+
+  constructor(fb: FormBuilder) {
+    this.formCasosClinicos = fb.group({
+      'name': [],
+    })
+   }
+
+  value: string = '';
 
   ngOnInit(): void {
   }
